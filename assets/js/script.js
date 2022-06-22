@@ -11,4 +11,14 @@ function button1Click () {
     button1El.setAttribute("class","buttonOne" ) 
 }
 
+function button2Click () {
+    confirm("hello!")
+}
+
+function button3Click() {
+    window.location.href = "page2.html"
+}
+
 button1El.onclick = button1Click
+button2El.onclick = button2Click
+button3El.onclick = button3Click
