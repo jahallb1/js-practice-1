@@ -19,6 +19,11 @@ function button3Click() {
     window.location.href = "page2.html"
 }
 
+const button4Click = () => {
+    button4El.setAttribute("style", "color: red;")
+}
+
 button1El.onclick = button1Click
 button2El.onclick = button2Click
 button3El.onclick = button3Click
+button4El.onclick = button4Click
