@@ -9,6 +9,7 @@ function button1Click () {
         button1El.removeAttribute("class") 
     } 
     button1El.setAttribute("class","buttonOne" ) 
+    fizzBuzz(arr)
 }
 
 function button2Click () {
@@ -21,6 +22,21 @@ function button3Click() {
 
 const button4Click = () => {
     button4El.setAttribute("style", "color: red;")
+}
+let arr = [10, 11, 12, 13, 14, 15]
+
+function fizzBuzz(arr) {
+    for(i =0; i < arr.length; i++) {
+       if (arr[i] % 15 === 0) {
+           console.log("Fizzbuzz")
+       } else if(arr[i] % 5 === 0) {
+           console.log("Fizz")
+       } else if(arr[i] % 3 === 0) {
+            console.log("Buzz")
+       } else {
+            console.log(i)
+       }
+    }
 }
 
 button1El.onclick = button1Click
