@@ -2,6 +2,8 @@ let button1El = document.getElementById("button1")
 let button2El = document.getElementById("button2")
 let button3El = document.getElementById("button3")
 let button4El = document.getElementById("button4")
+let headerDivEl = document.querySelector(".header")
+let arr = [10, 11, 12, 13, 14, 15]
 
 function button1Click () {
      
@@ -22,8 +24,15 @@ function button3Click() {
 
 const button4Click = () => {
     button4El.setAttribute("style", "color: red;")
+    for(i = 0; i < arr.length; i ++) {
+        console.log(arr[i])
+        let number = document.createElement('h1')
+        number.textContent = arr[i]
+        headerDivEl.append(number)
+        
+    }
 }
-let arr = [10, 11, 12, 13, 14, 15]
+
 
 function fizzBuzz(arr) {
     for(i =0; i < arr.length; i++) {
