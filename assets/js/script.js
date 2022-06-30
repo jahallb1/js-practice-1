@@ -43,7 +43,7 @@ function fizzBuzz(arr) {
        } else if(arr[i] % 3 === 0) {
             console.log("Buzz")
        } else {
-            console.log(i)
+            console.log(arr[i])
        }
     }
 }
